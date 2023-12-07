@@ -30,12 +30,10 @@ while (given_num!=6):
                 print("Product not found in cart") 
                 
     elif given_num ==4:
-        delproduct = input("Enter name of deleted product: ")
-        if delproduct in shoppingcart:
-            del shoppingcart[delproduct]
-            print("cart is empty")
+        if shoppingcart=={}:
+         print("shopping cart is empty")
         else:
-            print("Product not found in the cart.") 
+            print(shoppingcart)
             
     elif given_num==6: 
        print("NOW you are exiting the menu")
